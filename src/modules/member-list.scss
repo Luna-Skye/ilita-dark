@@ -1,0 +1,84 @@
+// =============================================== //
+// ================== VARIABLES ================== //
+@import '../_variables.scss';
+
+// =============================================== //
+// ================== AUTO HIDE ================== //
+// TODO Clean this up, jesus fucking christ
+$auto-hide-list: true;
+$list-width: 56px;
+@if ($auto-hide-list) {
+  .membersWrap-2h-GB4 {
+    min-width: unset;
+    width: $list-width;
+    justify-content: right;
+  }
+  .members-1998pB { transition: transform $anim-speed $anim-ease; }
+  .membersWrap-2h-GB4:hover .members-1998pB { transform: translateX(-240px + $list-width); }
+  .membersWrap-2h-GB4 .membersGroup-v9BXpm::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    border-radius: 50px;
+    background: unset;
+    background-color: var(--background-accent);
+    position: absolute;
+    left: -32px;
+    top: 29px;
+    margin-left: 0px;
+  }
+  .membersWrap-2h-GB4 .members-1998pB .member-3-YXUe {
+    background-color: unset;
+    margin-left: 0px;
+    transition: margin-left $anim-speed $anim-ease;
+  }
+  .membersWrap-2h-GB4 .members-1998pB .member-3-YXUe { margin-left: 8px; }
+  .membersWrap-2h-GB4:hover .membersGroup-v9BXpm { transform: translateX(-6px); }
+  .membersWrap-2h-GB4 .membersGroup-v9BXpm {
+    cursor: default;
+    transform: translateX(45px);
+    transition: transform $anim-speed $anim-ease;
+    overflow: visible;
+  }
+}
+
+// Roles Header
+.membersGroup-v9BXpm { text-align: center; }
+
+
+// Members
+.member-3-YXUe .layout-2DM8Md {
+  border-radius: 32px;
+  padding: 0 16px 0 4px;
+}
+  
+.clickable-1JJAn8:hover .layout-2DM8Md {
+  background: $col-bg-secondary-alt;
+}
+
+// Hide Member List Button
+.iconWrapper-2OrFZ1[aria-label="Member List"] {
+  display: none;
+}
+
+// Clean Member Count
+.total-members-count-box {
+    justify-content: left !important;
+  padding-top: 24px !important;
+}
+.total-members-count-box > div:first-child {
+  margin-bottom: 6px !important;
+}
+.total-members-count {
+  justify-content: left !important;
+}
+.total-members-count > span {
+  font-size: 12px !important;
+  line-height: 16px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;  
+  color: var(--channels-default) !important;
+}
+.total-members-count > i {
+  display: none;
+}

@@ -1,0 +1,131 @@
+// =============================================== //
+// ================== VARIABLES ================== //
+@import '../_variables.scss';
+
+
+// =============================================== //
+// =================== DM CALLS ================== //
+// Streaming/Video DM Call Background
+.wrapper-2qzCYF { background: var(--background-floating); }
+
+// Volume Slider
+.mediaBarGrabber-1FqnbN,
+.mediaBarProgress-1xaPtl,
+.mediaBarProgress-1xaPtl:after,
+.mediaBarProgress-1xaPtl:before {
+  background-color: $col-primary !important;
+}
+
+// Call Action Dock
+.wrapper-3EGhDO {
+  background-color: rgba($col-bg-secondary, 1);
+  border-radius: 32px;
+  padding: 2px;
+}
+.colorable-1bkp8v.white-3GPOIp,
+.colorable-1bkp8v.white-3GPOIp .centerIcon-2G6o-T {
+  color: currentColor;
+}
+.colorable-1bkp8v.primaryDark-3mSFDl,
+.contextMenuNub-3yOOYo {
+  background: $col-bg-secondary;
+}
+.colorable-1bkp8v.primary-3NQg8g,
+.colorable-1bkp8v.primary-3NQg8g.active-1QRrIS,
+.colorable-1bkp8v.primary-3NQg8g:hover, 
+.colorable-1bkp8v.white-3GPOIp,
+.centerButton-3CaNcJ,
+.colorable-1bkp8v.white-3GPOIp.active-1QRrIS,
+.colorable-1bkp8v.white-3GPOIp:hover,
+.colorable-1bkp8v.red-33-Lnk,
+.controlButton-2MhVEL {
+  background: none !important;
+  border-radius: 128px;
+  margin: 0;
+}
+.colorable-1bkp8v.red-33-Lnk:hover { background: $col-red !important; }
+
+
+
+// =============================================== //
+// =================== MESSAGES ================== //
+// Message Input
+.scrollableContainer-2NUZem {
+  background: var(--background-primary);
+
+  // Attach Button
+  .attachButtonPlay-3iJ0mf { color: $col-primary; }
+
+  // Emote/Gif/Gift Buttons
+  .buttons-3JBrkn .lookBlank-3eh9lL .button-3AYNKb { color: hsla(0,0%,100%,0.25); }
+}
+
+// Chat Message
+.message-2qnXI6 {
+  border-radius: 24px;
+}
+.mouse-mode.full-motion .message-2qnXI6:hover { background: $col-bg-secondary; }
+.cozy-3raOZG.wrapper-2a6GCs {
+  margin-left: 16px;
+  padding-left: 56px;
+  // padding-top: 8px;
+  // padding-bottom: 8px;
+}
+.avatar-1BDn8e {
+  left: 4px;
+  // top: 8px;
+}
+.cozy-3raOZG .timestamp-3ZCmNB.alt-1uNpEt {
+  width: 48px;
+}
+
+// Chat Embed
+.embed-IeVjo6 {
+  border-radius: 16px;
+  border-left-color: $col-secondary !important;
+}
+.embedSpotify-tvxDCr { border-radius: 16px; }
+
+// Chat Message Actions
+$btn-hover-col: lighten($col-bg-accent, 10%);
+.container-3npvBV { top: -16px; }
+.wrapper-2aW0bm {
+  background: $col-bg-secondary;
+  border-radius: 16px;
+  box-shadow: 0 0 0 4px $col-bg-primary !important;
+  &:hover { background: $col-bg-accent; }
+
+  .button-1ZiXG9 {
+    border-radius: 16px;
+    &:hover { background: $btn-hover-col; }
+
+    &.dangerous-2r8KxV {
+      color: $col-red;
+      &:hover {
+        background: $col-red;
+        color: white;
+      }
+    }
+  }
+
+  .ThemeDownloaderApply,
+  .PluginDownloaderApply,
+  .powercord-snippet-apply {
+    margin-right: 4px;
+
+    div {
+      margin-left: 0;
+      margin-right: 4px;
+      border-radius: 16px;
+      padding: 8px;
+    }
+    &:not(.applied) div:hover {
+      // background: hsla(0,0%,100%,0.04);
+      background: $btn-hover-col;
+      color: white;
+    }
+    &.applied div {
+      color: $col-green;
+    }
+  }
+}

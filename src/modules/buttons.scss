@@ -1,0 +1,88 @@
+// =============================================== //
+// ================== VARIABLES ================== //
+@import '../_variables.scss';
+
+
+// =============================================== //
+// ================= MAIN BUTTONS ================ //
+.button-1YfofB.buttonColor-7qQbGO {
+  background: $col-bg-primary !important;
+  border-radius: 32px;
+  &.buttonActive-3FrkXp {
+    background: $col-primary !important;
+    &:hover { background: lighten($col-primary, 10%); }
+  }
+}
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+  background: $col-primary;
+  border-radius: 32px;
+  &:hover { background: lighten($col-primary, 10%); }
+}
+.lookLink-9FtZy-.colorBrand-3pXr91 { color: $col-primary; }
+.lookFilled-1Gx00P.colorBrand-3pXr91:disabled { background: $col-primary; }
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+  background: $col-bg-secondary-alt;
+  border-radius: 32px;
+}
+.button-14-BFJ { border-radius: 32px; }
+.lookFilled-1Gx00P {
+  border-radius: 32px;
+  &.colorRed-1TFJan { background: $gradient-red; }
+  &.colorYellow-2JqYwt { background: $gradient-yellow; }
+  &.colorBrand-3pXr91 {
+    background: $gradient-primary;
+    &:hover { background: $gradient-primary; }
+  }
+}
+.button-38aScr { border-radius: 32px; }
+
+
+// =============================================== //
+// ================ STATUS PICKER ================ //
+#status-picker .separator-2I32lJ,
+#status-picker .description-2L932D { display: none; }
+#status-picker .focused-3afm-j {
+  background: $gradient-primary;
+  &#status-picker-online { background: linear-gradient(45deg, #21583f, #43b581); }
+  &#status-picker-idle { background: linear-gradient(45deg, #915c03, #faa61a); }
+  &#status-picker-dnd { background: $gradient-red; }
+  &#status-picker-invisible { background: linear-gradient(45deg, #3a4047, #747f8d); }
+}
+
+// =============================================== //
+// ================= GUILD POPOUT ================ //
+#guild-header-popout .spearator-2I32lJ { display: none; }
+#guild-header-popout .focused-3afm-j {
+  background: $gradient-primary;
+  &#guild-header-popout-premium-subscribe { background: $gradient-nitro; }
+  &#guild-header-popout-leave { background: $gradient-red; }
+}
+
+// =============================================== //
+// ================= USER CONTEXT ================ //
+#user-context .separator-2I32lJ { display: none; }
+#user-context .focused-3afm-j {
+  background: $gradient-primary;
+  &#user-context-mention          { background: $gradient-yellow; }
+  &#user-context-invite-to-listen { background: $gradient-green; }
+  &#user-context-mute             { background: $gradient-grey; }
+  &#user-context-remove-friend    { background: $gradient-red; }
+  &#user-context-call             { background: $gradient-green; }
+  &#user-context-block            { background: $gradient-red; }
+  &#user-context-kick             { background: $gradient-red; }
+  &#user-context-ban              { background: $gradient-red; }
+}
+
+// =============================================== //
+// ================ MESSAGE CONTEXT ============== //
+#message.menu-3sdvDG  .focused-3afm-j {
+  background: $gradient-primary;
+  &#message-delete { background: $gradient-red; }
+}
+
+// =============================================== //
+// ================ STREAM OPTIONS =============== //
+.menu-3sdvDG .colorDefault-2K3EoJ.focused-3afm-j {
+  background: $gradient-primary;
+  &#manage-streams-stop-streaming { background: $gradient-red; }
+}

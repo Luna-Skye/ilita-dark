@@ -1,0 +1,9 @@
+{
+    "name": "ILITA DARK",
+    "description": "Minimal, Dark, and Clean",
+    "version": "1.0.0",
+    "author": "Andy | Sepshun#2703",
+    "theme": "dist/theme.css",
+    "consent": "false",
+    "license": "MIT"
+}

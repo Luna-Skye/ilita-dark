@@ -1,0 +1,137 @@
+@import url('https://raw.githack.com/mrrobboss/discord-css-snippets/master/modern_spotify.css');
+
+.userPopout-3XzG_A{
+  width: 450px;
+}
+
+
+
+
+
+#status-picker .separator-2I32lJ, #status-picker .description-2L932D {
+  display: none;
+}
+#status-picker .focused-3afm-j {
+  background: linear-gradient(45deg, #2b45a2, #7289da);
+}
+#status-picker .focused-3afm-j#status-picker-online {
+  background: linear-gradient(45deg, #21583f, #43b581);
+}
+#status-picker .focused-3afm-j#status-picker-idle {
+  background: linear-gradient(45deg, #915c03, #faa61a);
+}
+#status-picker .focused-3afm-j#status-picker-dnd {
+  background: linear-gradient(45deg, #aa0e0e, #f04747);
+}
+#status-picker .focused-3afm-j#status-picker-invisible {
+  background: linear-gradient(45deg, #3a4047, #747f8d);
+}
+
+#guild-header-popout .separator-2I32lJ {
+  display: none;
+}
+#guild-header-popout .focused-3afm-j {
+  background: linear-gradient(45deg, #2b45a2, #7289da);
+}
+#guild-header-popout .focused-3afm-j#guild-header-popout-premium-subscribe {
+  background: linear-gradient(45deg, #f300ea, #ff73fa);
+}
+#guild-header-popout .focused-3afm-j#guild-header-popout-leave {
+  background: linear-gradient(45deg, #aa0e0e, #f04747);
+}
+
+/*gradient buttons in user context menu */
+#user-context .separator-2I32lJ {
+  display: none;
+}
+#user-context .focused-3afm-j {
+  background: linear-gradient(45deg, #2b45a2, #7289da);
+}
+#user-context .focused-3afm-j#user-context-mention {
+  background: linear-gradient(45deg, #faa61a, #fbc05e); /* this is the border colors on the left when someone mentions you */
+}
+#user-context .focused-3afm-j#user-context-invite-to-listen {
+  background: linear-gradient(45deg, #1DB954, #77d598);
+}
+#user-context .focused-3afm-j#user-context-mute { /*remove if you don't like mute being black-ish.*/
+  background: linear-gradient(45deg, #000000, #4c4c4c);
+}
+#user-context .focused-3afm-j#user-context-remove-friend { /*remove if you don't like remove-friend being red.*/
+  background: linear-gradient(45deg, #aa0e0e, #f04747);
+}
+#user-context .focused-3afm-j#user-context-call {
+  background: linear-gradient(45deg, #33DC51, #70e685);
+}
+#user-context .focused-3afm-j#user-context-block { /*remove if you don't like block being red.*/
+  background: linear-gradient(45deg, #aa0e0e, #f04747);
+}
+#user-context .focused-3afm-j#user-context-kick {
+  background: linear-gradient(45deg, #aa0e0e, #f04747);
+}
+#user-context .focused-3afm-j#user-context-ban {
+  background: linear-gradient(45deg, #aa0e0e, #f04747);
+}
+
+
+
+
+
+/* BLURRY PROFILE POPUPS */
+.userPopout-3XzG_A {
+    border-radius: 10px;
+    box-shadow: var(--elevation-high);
+    border: none;
+    background: none;
+    backdrop-filter: blur(10px);
+}
+.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
+    background: #00000066;
+}
+.headerPlaying-j0WQBV {
+    background: #7289daa8;
+}
+.headerStreaming-2FjmGz {
+    background: #593695a8;
+}
+.theme-dark .headerNormal-T_seeN {
+    background: #000000a8;
+}
+.headerSpotify-zpWxgT {
+    background: #1db954a8;
+}
+.textarea-2r0oV8:focus {
+    background: #0000008b;
+    border-radius: 5px;
+}
+.input-cIJ7To {
+    background: #00000044;
+    border: none;
+    border-radius: 5px;
+    transition: ease-in-out 0.1s;
+}
+.input-cIJ7To:focus {
+    background: #0000008b;
+}
+.buttonsWrapper-2eYbM0 .lookOutlined-3sRXeN.colorWhite-rEQuAQ {
+    border: none;
+    background: #1db954a8;
+    border-radius: 5px;
+}
+.buttonsWrapper-2eYbM0 .lookOutlined-3sRXeN.colorWhite-rEQuAQ:hover {
+    background: #1db954ff;
+}
+.customStatus-1bh2V9 img {
+    border-radius: 3px;
+}
+.headerStreaming-2FjmGz .lookOutlined-3sRXeN.colorWhite-rEQuAQ {
+    background: #593695a8;
+}
+.headerStreaming-2FjmGz .lookOutlined-3sRXeN.colorWhite-rEQuAQ:hover {
+    background: #593695ff;
+}
+.headerPlaying-j0WQBV .lookOutlined-3sRXeN.colorWhite-rEQuAQ {
+    background: #7289daa8;
+}
+.headerPlaying-j0WQBV .lookOutlined-3sRXeN.colorWhite-rEQuAQ:hover {
+    background: #7289daff;
+}

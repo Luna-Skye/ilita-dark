@@ -1,0 +1,28 @@
+{
+  "name": "ilita-dark",
+  "version": "1.0.0",
+  "description": "ILITA Dark Theme for Powercord",
+  "main": "index.js",
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      ".git",
+      "node_modules/**/node_modules"
+    ],
+    "watch": [
+      "./src"
+    ],
+    "ext": "scss"
+  },
+  "scripts": {
+    "dev": "nodemon -q index.js",
+    "build": "node index.js"
+  },
+  "author": "Sepshun",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  }
+}

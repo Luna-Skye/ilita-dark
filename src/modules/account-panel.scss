@@ -1,0 +1,60 @@
+// =============================================== //
+// ================== VARIABLES ================== //
+@import '../_variables.scss';
+
+.panels-j1Uci_ {
+  border-radius: 16px 16px 0 0;
+
+  .icon-3Oovq9 {
+    border-radius: 50%;
+    background-color: $col-primary !important;
+  }
+}
+
+
+// FLY OUT BUTTONS
+.container-3baos1 .noWrap-3jynv6 {
+  width: 0px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s $anim-ease;
+}
+.container-3baos1:hover .noWrap-3jynv6 {
+  width: 140px;
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+// RAINBOW BUTTONS | Credit: MulverineX#001
+@keyframes pride {
+  0% { color: rgb(255,0,0); }
+  8% { color: rgb(255,127,0); }
+  16% { color: rgb(255,255,0); }
+  25% { color: rgb(127,255,0); }
+  33% { color: rgb(0,255,0); }
+  41% { color: rgb(0,255,127); }
+  50% { color: rgb(0,255,255); }
+  58% { color: rgb(0,127,255); }
+  66% { color: rgb(0,0,255); }
+  75% { color: rgb(127,0,255); }
+  83% { color: rgb(255,0,255); }
+  91% { color: rgb(255,0,127); }
+  100% { color: rgb(255,0,0); }
+}
+@keyframes trans {
+  0% { color: $col-secondary; }
+  25% { color: $col-primary; }
+  50% { color: rgb(255, 255, 255); }
+  75% { color: $col-primary; }
+  100% { color: $col-secondary; }
+}
+.button-14-BFJ { transition: $anim-speed $anim-ease; }
+.button-14-BFJ:hover {
+  transition: $anim-speed $anim-ease;
+  animation-name: trans;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}

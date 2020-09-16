@@ -1,0 +1,20 @@
+// =============================================== //
+// ================== VARIABLES ================== //
+@import '../_variables.scss';
+
+// Move Message Indicator Pills to Bottom
+#app-mount .wrapper-1Rf91z.guilds-1SWlCJ [class*=pill] {
+  top: auto !important;
+  bottom: calc(var(--HSL-server-icon-size) / -1 + var(--HSL-server-icon-size) / 2 - 8px) !important;
+  transform: rotate(-90deg) translateY(50%);
+  span { background: $col-primary; }
+}
+
+// Streaming/Notification Number Badge
+.iconBadge-2wi9r4.participating-NBGDkr,
+.numberBadge-2s8kKX { background: $col-primary; }
+
+// Folder Background
+.folderIconWrapper-226oVY {
+  background-color: rgba($col-primary, 0.4) !important;
+}

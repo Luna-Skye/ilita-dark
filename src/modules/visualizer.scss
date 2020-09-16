@@ -1,0 +1,22 @@
+// =============================================== //
+// ================== VARIABLES ================== //
+@import '../_variables.scss';
+
+.vp-audioviz-bar {
+  // background: desaturate(darken($col-primary, 10%), 50%) !important;
+}
+.vp-audioviz-visualizer { opacity: 0.5; }
+@keyframes audioviz-rainbow {
+  0% { background: $col-secondary; }
+  25% { background: $col-primary; }
+  50% { background: hsl(0%,0%,80%); }
+  75% { background: $col-primary; }
+  100% { background: $col-secondary; }
+}
+ 
+.vp-audioviz-bar {
+  box-sizing: border-box !important;
+  animation-name: audioviz-rainbow !important;
+  animation-duration: 10s !important;
+  animation-iteration-count:infinite !important;
+}

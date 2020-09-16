@@ -1,0 +1,36 @@
+// =============================================== //
+// ================= USER POPOUT ================= //
+
+// W I D E  User Profiles
+.userPopout-3XzG_A { width: 450px; }
+
+// Begone Profile Notes
+.userInfoSection-2acyCx + .userInfoSection-2acyCx { border: 0px; }
+div.userInfoSection-2acyCx { padding: 10px 0px; }
+.userInfoSectionHeader-CBvMDh { display: none; }
+.note-QfFU8y { display: none; }
+
+// Disable Animations
+#popout_3182 .translate-2dAEQ6.didRender-33z1u8 {
+  transition: none !important;
+}
+
+// Blurrify & Colors
+.userPopout-3XzG_A {
+  border-radius: 16px;
+  box-shadow: var(--elevation-high);
+  background: none;
+  backdrop-filter: blur(16px);
+}
+$body-opacity: 0.4;
+.theme-dark .body-3iLsc4,
+.theme-dark .footer-1fjuF6 {
+  background: rgba($col-bg-floating, $body-opacity);
+}
+$header-opacity: 0.8;
+.headerPlaying-j0WQBV   { background: rgba(#7289da, $header-opacity); }
+.headerStreaming-2FjmGz { background: rgba(#593695, $header-opacity); }
+.headerSpotify-zpWxgT   { background: rgba(#1DB954, $header-opacity); }
+.theme-dark .headerNormal-T_seeN { background: rgba($col-bg-secondary-alt, $header-opacity); }
+
+

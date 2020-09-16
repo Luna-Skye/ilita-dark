@@ -1,0 +1,125 @@
+// =============================================== //
+// ================ MODULE IMPORTS =============== //
+@import "modules/account-panel.scss";
+@import "modules/buttons.scss";
+@import "modules/chat.scss";
+@import "modules/member-list.scss";
+@import "modules/modern-indicators.scss";
+@import "modules/popouts.scss";
+@import "modules/server-nav.scss";
+@import "modules/settings.scss";
+@import "modules/spotify-panel.scss";
+@import "modules/user-popout.scss";
+@import "modules/visualizer.scss";
+
+// =============================================== //
+// ================== VARIABLES ================== //
+.theme-dark {
+  // Backgrounds
+  --background-primary      : #{$col-bg-primary};
+  --background-secondary    : #{$col-bg-secondary};
+  --background-secondary-alt: #{$col-bg-secondary-alt};
+  --background-tertiary     : #{$col-bg-tertiary};
+  --background-accent       : #{$col-bg-accent};
+  --background-floating     : #{$col-bg-floating};
+
+  // Text
+  --text-link: #{$col-secondary};
+  --text-muted: hsla(0,0%,100%,0.25);
+
+  // Scrollbars
+  --scrollbar-auto-thumb: #{$col-bg-secondary-alt};
+  --scrollbar-auto-track: transparent;
+  --scrollbar-thin-thumb: #{$col-bg-secondary-alt};
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-scrollbar-color-thumb: #{$col-bg-secondary-alt};
+  --scrollbar-auto-scrollbar-color-track: #{$col-bg-secondary};
+}
+@keyframes gradient-move {
+  0% { background-position: 0% 82% }
+  50% { background-position: 100% 19% }
+  100% { background-position: 0% 82% }
+}
+
+// =============================================== //
+// =================== CORE APP ================== //
+// Window Top Border
+$top-border-size: 4px;
+#app-mount { height: calc(100% - #{$top-border-size}); }
+body {
+  padding-top: $top-border-size;
+  background: $col-primary;
+  // background: linear-gradient(90deg, $col-primary, $col-secondary);
+  background: linear-gradient(90deg, $col-blue, $col-primary, white, $col-primary, $col-secondary);
+  background-size: 400% 400%;
+  animation: gradient-move 18s ease infinite;
+}
+
+// Discord Title Bar Text
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css);
+
+.wordmark-2iDDfm:after {
+  content: "DISCORDO";
+  font-size: 14px;
+  font-weight: 700;
+  position: linear;
+  top: 5px;
+  padding-left: -3px;
+	font-family: "Discord";
+}
+.wordmark-2iDDfm > svg { width: 0px; }
+
+// Home Button
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
+.wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+  background: $col-primary;
+}
+
+// New/Explore Servers Buttons
+.circleIconButton-jET_ig.selected-ugP_am { background: $col-secondary; }
+.circleIconButton-jET_ig { color: $col-secondary; }
+
+// Weird Friends List Thingy
+.theme-dark .container-1D34oG { background: $col-bg-primary; }
+
+// Upload/Listen/Screenshare Modal
+.theme-dark .uploadModal-2ifh8j,
+.theme-dark .modal-yWgWj-,
+.theme-dark .root-1gCeng {
+  background: $col-bg-primary;
+  border-radius: 16px;
+}
+.theme-dark .footer-3mqk7D,
+.theme-dark .footer-2gL1pp {
+  background: $col-bg-tertiary;
+  border-radius: 16px;
+}
+// Screen Share Thumbnail Hover/Select Outlines
+.tile-2w4k5N:hover .sourceThumbnail-27dolk { box-shadow: 0 0 0 2px rgba($col-primary, 0.5) inset; }
+.sourceThumbnail-27dolk.selected-1nOkyc { box-shadow: 0 0 0 2px $col-primary inset; }
+
+// Server Settings Text Input
+.input-cIJ7To.focused-1mmYsC,
+.input-cIJ7To:focus { border-color: $col-primary; }
+
+// Settings Close Button
+.theme-dark .closeButton-1tv5uR {
+  border: none;
+  border-radius: 0;
+  transition: $anim-speed $anim-ease;
+  &:hover { border-radius: 50%; }
+}
+
+// Server Header
+.header-2o-2hj { background: $col-bg-secondary; }
+.clickable-2ap7je .header-2o-2hj:hover,
+.selected-WP3kCM .header-2o-2hj {
+  background: $col-bg-secondary-alt;
+}
+
+// Update Icon Color
+.updateIconForeground-3tnNZn { fill: $col-green; }
+
+// Wider Searching
+.searchResultsWrap-3-pOjs{ width: 500px; }
+

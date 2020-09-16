@@ -18,11 +18,25 @@
     "dev": "nodemon -q index.js",
     "build": "node index.js"
   },
-  "author": "Sepshun",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sepshun/ilita-dark.git"
+  },
+  "author": "Andy Chadwick <sepshuncontact@gmail.com> (https://sepshun.io/)",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^4.1.0",
     "fs-extra": "^9.0.1",
     "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "signale": "^1.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
   }
 }

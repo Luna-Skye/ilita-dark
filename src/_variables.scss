@@ -19,6 +19,7 @@ $col-secondary: $col-blue;
 // Gradients
 $gradient-primary: linear-gradient(45deg, desaturate(darken($col-primary, 25%), 40%), $col-primary);
 $gradient-green:   linear-gradient(45deg, #33DC51, #70e685);
+$gradient-blue:    linear-gradient(45deg, darken($col-blue, 25%), $col-blue);
 $gradient-yellow:  linear-gradient(45deg, #faa61a, #fbc05e);
 $gradient-red:     linear-gradient(45deg, #aa0e0e, #f04747);
 $gradient-grey:    linear-gradient(45deg, #000000, #4c4c4c);

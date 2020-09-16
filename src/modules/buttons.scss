@@ -1,10 +1,11 @@
-// =============================================== //
-// ================== VARIABLES ================== //
+//*===============================================*//
+//*================== VARIABLES ==================*//
 @import '../_variables.scss';
 
 
-// =============================================== //
-// ================= MAIN BUTTONS ================ //
+//*===============================================*//
+//*================= MAIN BUTTONS ================*//
+// TODO: Clean this up, a lot
 .button-1YfofB.buttonColor-7qQbGO {
   background: $col-bg-primary !important;
   border-radius: 32px;
@@ -37,8 +38,8 @@
 .button-38aScr { border-radius: 32px; }
 
 
-// =============================================== //
-// ================ STATUS PICKER ================ //
+//*===============================================*//
+//*================ STATUS PICKER ================*//
 #status-picker .separator-2I32lJ,
 #status-picker .description-2L932D { display: none; }
 #status-picker .focused-3afm-j {
@@ -49,8 +50,8 @@
   &#status-picker-invisible { background: linear-gradient(45deg, #3a4047, #747f8d); }
 }
 
-// =============================================== //
-// ================= GUILD POPOUT ================ //
+//*===============================================*//
+//*================= GUILD POPOUT ================*//
 #guild-header-popout .spearator-2I32lJ { display: none; }
 #guild-header-popout .focused-3afm-j {
   background: $gradient-primary;
@@ -58,8 +59,8 @@
   &#guild-header-popout-leave { background: $gradient-red; }
 }
 
-// =============================================== //
-// ================= USER CONTEXT ================ //
+//*===============================================*//
+//*================= USER CONTEXT ================*//
 #user-context .separator-2I32lJ { display: none; }
 #user-context .focused-3afm-j {
   background: $gradient-primary;
@@ -73,15 +74,15 @@
   &#user-context-ban              { background: $gradient-red; }
 }
 
-// =============================================== //
-// ================ MESSAGE CONTEXT ============== //
+//*===============================================*//
+//*================ MESSAGE CONTEXT ==============*//
 #message.menu-3sdvDG  .focused-3afm-j {
   background: $gradient-primary;
   &#message-delete { background: $gradient-red; }
 }
 
-// =============================================== //
-// ================ STREAM OPTIONS =============== //
+//*===============================================*//
+//*================ STREAM OPTIONS ===============*//
 .menu-3sdvDG .colorDefault-2K3EoJ.focused-3afm-j {
   background: $gradient-primary;
   &#manage-streams-stop-streaming { background: $gradient-red; }

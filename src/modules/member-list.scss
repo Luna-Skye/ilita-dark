@@ -1,9 +1,10 @@
-// =============================================== //
-// ================== VARIABLES ================== //
+//*===============================================*//
+//*================== VARIABLES ==================*//
 @import '../_variables.scss';
 
-// =============================================== //
-// ================== AUTO HIDE ================== //
+//*===============================================*//
+//*================== AUTO HIDE ==================*//
+// Credit: DanKGooGLy#1337 ----------------------- //
 // TODO Clean this up, jesus fucking christ
 $auto-hide-list: true;
 $list-width: 56px;
@@ -42,43 +43,47 @@ $list-width: 56px;
   }
 }
 
-// Roles Header
+
+//*Role Header ----------------------------------- //
 .membersGroup-v9BXpm { text-align: center; }
 
-
-// Members
+//*Members --------------------------------------- //
 .member-3-YXUe .layout-2DM8Md {
   border-radius: 32px;
   padding: 0 16px 0 4px;
 }
-  
 .clickable-1JJAn8:hover .layout-2DM8Md {
   background: $col-bg-secondary-alt;
 }
 
-// Hide Member List Button
-.iconWrapper-2OrFZ1[aria-label="Member List"] {
-  display: none;
-}
+//*Hide Member List Button ----------------------- //
+.iconWrapper-2OrFZ1[aria-label="Member List"] { display: none; }
 
-// Clean Member Count
+//*Clean Member Count ---------------------------- //
+// Credit: MulverineX#0001 ----------------------- //
 .total-members-count-box {
-    justify-content: left !important;
+  justify-content: left !important;
   padding-top: 24px !important;
+  padding-left: 64px !important;
+  transition: padding-left $anim-speed $anim-ease;
+
+  > div:first-child { margin-bottom: 6px !important; }
 }
-.total-members-count-box > div:first-child {
-  margin-bottom: 6px !important;
+.membersWrap-2h-GB4:hover .total-members-count-box {
+  padding-left: 16px !important;
 }
 .total-members-count {
   justify-content: left !important;
-}
-.total-members-count > span {
-  font-size: 12px !important;
-  line-height: 16px !important;
-  font-weight: 600 !important;
-  text-transform: uppercase;  
-  color: var(--channels-default) !important;
-}
-.total-members-count > i {
-  display: none;
+
+  // Member Count Text
+  > span {
+    font-size: 12px !important;
+    line-height: 16px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;  
+    color: var(--channels-default) !important;
+  }
+
+  // Hide Dots
+  // > i { display: none; }
 }

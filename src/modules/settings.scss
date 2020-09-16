@@ -1,29 +1,30 @@
-// =============================================== //
-// ================== VARIABLES ================== //
+//*===============================================*//
+//*================== VARIABLES ==================*//
 @import '../_variables.scss';
 
-// Question Mark Box
+//*Question Mark Box ----------------------------- //
 .theme-dark .questionMark-CWEQZn {
   border-radius: 32px;
 }
 
-// Separate Powercord Settings from Plugin Settings
+//*Separate PC Settings from Plugin Settings ----- //
+// Credit: MulverineX#0001 ----------------------- //
 .item-PXvHYJ[data-item-id=pc-updater] {
   margin-bottom: 16px;
 }
 
-// Separators
+//*Separators ------------------------------------ //
 .separator-gCa7yv {
   background: lighten($col-bg-accent, 10%);
 }
 
-// Centered Headers
+//*Centered Headers ------------------------------ //
 .side-8zPYf6 .header-2RyJ0Y {
   text-align: center;
   color: $col-primary;
 }
 
-// Settings Tabs
+//*Settings Tabs --------------------------------- //
 .side-8zPYf6 .themed-OHr7kt.item-PXvHYJ {
   border-radius: 16px;
   &.selected-3s45Ha {
@@ -31,17 +32,26 @@
   }
 }
 
-// Checkbox/Switch
+//*Checkbox/Switch ------------------------------- //
 .themeDefault-24hCdX.valueChecked-m-4IJZ {
   background: $gradient-primary;
 }
 
-// Slider Background
+//*Slider Background ----------------------------- //
 .barFill-23-gu- {
   background: $gradient-primary;
 }
 
-// Text Inputs
+//*Text Inputs ----------------------------------- //
 .input-cIJ7To {
   border-radius: 32px;
+}
+
+//*Yellow Permission Ticks ----------------------- //
+// Credit: botato#6883 --------------------------- //
+.passthroughSelected-1Eq0Kl {
+  background-color: #ffba00 !important;
+}
+.passthrough-1c2ewQ:not(.passthroughSelected-1Eq0Kl) img {
+  content: url("https://cdn.discordapp.com/attachments/729456400077422623/748313547800313906/yellow.svg");
 }

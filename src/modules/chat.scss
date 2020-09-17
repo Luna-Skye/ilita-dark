@@ -69,6 +69,9 @@
 
   // Emote/Gif/Gift Buttons
   .buttons-3JBrkn .lookBlank-3eh9lL .button-3AYNKb { color: hsla(0,0%,100%,0.25); }
+
+  // Hide Send Nitro Gift Button
+  .buttons-3JBrkn [aria-label="Send a gift"] { display: none; }
 }
 
 //*Chat Message ---------------------------------- //

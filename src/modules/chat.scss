@@ -5,6 +5,16 @@
 
 //*===============================================*//
 //*=================== DM CALLS ==================*//
+//*Avatar Speaking Highlight Color --------------- //
+.border-Jn5IOt {
+  transition: $anim-speed $anim-ease;
+  &.speaking-B2MXPi {
+    box-shadow:
+      inset 0 0 0 2px $col-green,
+      inset 0 0 0 4px rgba($col-bg-floating, 0.5);
+  }
+}
+
 //*Streaming/Video DM Call Background ------------ //
 .wrapper-2qzCYF { background: var(--background-floating); }
 

@@ -241,3 +241,80 @@ $btn-hover-col: lighten($col-bg-accent, 10%);
 //*Hide Disabled Textbox ------------------------- //
 .channelTextAreaDisabled-8rmlrp > div { display: none; }
 
+//*Compressed Searchbar -------------------------- //
+// Credit: PoorPockets McNewHold#1984 ------------ //
+// .search-2oPWTC .searchBar-3dMhjb {
+//   width: 30px;
+//   transition-duration: 300ms;
+// }
+// .search-2oPWTC .searchBar-3dMhjb:hover {
+//   width: 200px;
+// }
+// .search-2oPWTC.focused-31_ccS .searchBar-3dMhjb {
+//   width: 244px !important;
+// }
+// .search-2oPWTC .icon-38sknP {
+//   cursor: pointer;
+// }
+
+//*Improved Chat Toolbar ------------------------- //
+.toolbar-1t6TWx {
+  height: 48px;
+
+  // Toolbar Icons
+  .iconWrapper-2OrFZ1 {
+    padding: 8px;
+    height: auto;
+    margin: 0 2px;
+    border-radius: 32px;
+
+    &:hover {
+      background: $col-bg-accent;
+    }
+    &.selected-1GqIat {
+      background: $col-bg-accent;
+      box-shadow: 0 0 0 2px $col-bg-secondary-alt inset;
+    }
+  }
+
+  // Search Bar/Button
+  .search-36MZv- {
+    margin: 0 2px;
+    
+    .searchBar-3dMhjb {
+      height: auto;
+      padding: 8px;
+      border-radius: 32px;
+      background: transparent;
+      width: 42px;
+      transition: $anim-speed $anim-ease;
+
+      &:hover {
+        background: $col-bg-accent;
+      }
+      
+      .iconLayout-1WxHy4 .icon-3cZ1F_ {
+        color: #B9BBBE;
+      }
+
+      .DraftEditor-root .public-DraftEditorPlaceholder-root {
+        color: #B9BBBE;
+      }
+    }
+
+    .search-2oPWTC.focused-31_ccS .searchBar-3dMhjb,
+    .search-2oPWTC.open-6_Y_aH .searchBar-3dMhjb {
+      background: $col-bg-accent;
+      width: 240px;
+      box-shadow: 0 0 0 2px $col-bg-secondary-alt inset;
+    }
+  }
+}
+.theme-dark .searchAnswer-3Dz2-q,
+.theme-dark .searchFilter-2ESiM3 {
+  background-color: $col-bg-secondary-alt;
+  padding: 0 4px;
+}
+.theme-dark .searchFilter-2ESiM3 { border-radius: 16px 0 0 16px; }
+.theme-dark .searchAnswer-3Dz2-q { border-radius: 0 16px 16px 0; }
+

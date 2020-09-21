@@ -134,3 +134,9 @@ body {
 div[id^=pinned-messages-] .contents-2mQqc9 img {
   top: 15px;
 }
+
+//*Transparent Picture in Picture ---------------- //
+.pictureInPictureWindow-1B5qSe{
+  opacity: 60%;
+  &:hover { opacity: 100%; }
+}

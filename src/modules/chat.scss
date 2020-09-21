@@ -152,3 +152,106 @@ $btn-hover-col: lighten($col-bg-accent, 10%);
   width: 8px;
   height: 8px;
 }
+
+//*DM Online Status Labels ----------------------- //
+// Credit: LuckFire#4800 ------------------------- //
+[aria-label="Online"]::after {
+  content: 'ONLINE';
+  // font-weight: 400;
+  padding-left: 4px;
+  color: #43B581
+}
+[aria-label="Do Not Disturb"]::after {
+  content: 'DO NOT DISTURB';
+  // font-weight: 400;
+  padding-left: 4px;
+  color: #F04747
+}
+[aria-label="Idle"]::after {
+  content: 'IDLE';
+  // font-weight: 400;
+  padding-left: 4px;
+  color: #FFB740
+}
+[aria-label="Offline"]::after {
+  content: 'OFFLINE/INVISIBLE';
+  // font-weight: 400;
+  padding-left: 4px;
+  color: #747F8D
+}
+
+
+//*DM Search Bubble ------------------------------ //
+// Credit: PoorPockets McNewHold#1984 ------------ //
+// TODO: Clean this up for SCSS ------------------ //
+#app-mount .privateChannels-1nO12o .searchBar-6Kv8R2 {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  height: 48px;
+  width: 48px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(-45deg, $col-primary, $col-secondary);
+  opacity: 0.8;
+  box-shadow: 2px 10px 10px var(--shadow, rgba(0,0,0,0.2)) !important;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  pointer-events: all;
+  padding: 0;
+
+  &:hover {
+    width: 224px;
+    opacity: 1;
+  }
+
+  .searchBarComponent-32dTOx { background-color: transparent !important; }
+  .inner-3ErfOT {
+    height: 100%;
+    width: 100%;
+  }
+
+  .searchBarComponent-32dTOx::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    bottom: 0;
+    right: 0;
+    background: url(https://discordapp.com/assets/4d254296157bb8927b7d53ed59beb0d8.svg) center/20px no-repeat;
+    pointer-events: none;
+  }
+
+  .searchBarComponent-32dTOx::before {
+    content: 'Search Direct Messages';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+    width: 208px;
+    bottom: 0;
+    right: 0vw;
+    color: white;
+    opacity: 1;
+    font-size: 12px;
+    line-height: 100%;
+    transition: all .2s ease-in-out;
+    pointer-events: none;
+  }
+
+  .searchBarComponent-32dTOx { color: transparent; }
+}
+.privateChannels-1nO12o .scrollerWrap-2lJEkd::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 100%;
+  border-bottom: 2px solid var(--main-color, #7289da);
+  box-sizing: border-box;
+  z-index: 9999;
+}
+.privateChannels-1nO12o .scrollerWrap-2lJEkd .scroller-2FKFPG {
+  margin-top: 50px;
+}

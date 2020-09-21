@@ -318,3 +318,14 @@ $btn-hover-col: lighten($col-bg-accent, 10%);
 .theme-dark .searchFilter-2ESiM3 { border-radius: 16px 0 0 16px; }
 .theme-dark .searchAnswer-3Dz2-q { border-radius: 0 16px 16px 0; }
 
+//*Recolor Status Icons -------------------------- //
+[aria-label*="Online"] svg rect:first-of-type {
+  fill: $col-green;
+}
+[aria-label*="Idle"] svg rect:first-of-type {
+  fill: $col-orange;
+}
+[aria-label*="Do Not Disturb"] svg rect:first-of-type {
+  fill: $col-red;
+}
+

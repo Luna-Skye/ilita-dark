@@ -329,3 +329,5 @@ $btn-hover-col: lighten($col-bg-accent, 10%);
   fill: $col-red;
 }
 
+//*Hide Nitro Button on Homepage ----------------- //
+#private-channels-2 { display: none; }

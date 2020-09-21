@@ -6,9 +6,9 @@
 @import url("https://raw.githack.com/LuckFire/CSS-Snippets/master/BetterChannelIndicators/indicators.css");
 :root {
   --unread-badge: rgba(255, 255, 255, 0.6) !important;
-  --unread-bg: #{rgba($col-bg-secondary-alt, 0.4)} !important;
   --selected-badge: #{$col-primary} !important;
-  --selected-bg: #{rgba($col-primary, 0.2)} !important;
-  --hovered-bg: #{rgba($col-bg-secondary-alt,0.25)} !important;
-  --bg-rounding: 0px 32px 32px 0px !important;
+  --unread-bg: linear-gradient(90deg, #{rgba($col-bg-secondary-alt, 0.8)}, transparent) !important;
+  --selected-bg: linear-gradient(90deg, #{rgba($col-primary, 0.4)}, transparent) !important;
+  --hovered-bg: linear-gradient(90deg, #{rgba($col-bg-secondary-alt, 0.4)}, transparent) !important;
+  --bg-rounding: 0px 0px 0px 0px !important;
 }

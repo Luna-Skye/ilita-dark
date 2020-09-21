@@ -45,4 +45,14 @@
       animation-timing-function: linear;
     }
   }
+
+  //*Spinny Settings Button ---------------------- //
+  // Credit: lucii#6018 -------------------------- //
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .button-14-BFJ[aria-label="User Settings"]:hover {
+    animation: rotate 0.5s infinite;
+  }
 }

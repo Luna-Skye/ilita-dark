@@ -238,3 +238,6 @@ $btn-hover-col: lighten($col-bg-accent, 10%);
   font-family: var(--font-family-monospace);
 }
 
+//*Hide Disabled Textbox ------------------------- //
+.channelTextAreaDisabled-8rmlrp > div { display: none; }
+

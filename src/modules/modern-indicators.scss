@@ -7,8 +7,8 @@
 :root {
   --unread-badge: rgba(255, 255, 255, 0.6) !important;
   --selected-badge: #{$col-primary} !important;
-  --unread-bg: linear-gradient(90deg, #{rgba($col-bg-secondary-alt, 0.8)}, transparent) !important;
+  --unread-bg: linear-gradient(90deg, #{rgba($col-bg-secondary-alt, 0.6)}, transparent) !important;
   --selected-bg: linear-gradient(90deg, #{rgba($col-primary, 0.4)}, transparent) !important;
-  --hovered-bg: linear-gradient(90deg, #{rgba($col-bg-secondary-alt, 0.4)}, transparent) !important;
+  --hovered-bg: linear-gradient(90deg, #{rgba($col-bg-secondary-alt, 1)}, transparent) !important;
   --bg-rounding: 0px 0px 0px 0px !important;
 }

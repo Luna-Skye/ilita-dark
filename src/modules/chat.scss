@@ -51,10 +51,12 @@
 .colorable-1bkp8v.red-33-Lnk,
 .controlButton-2MhVEL {
   background: none !important;
-  border-radius: 128px;
   margin: 0;
 }
 .colorable-1bkp8v.red-33-Lnk:hover { background: $col-red !important; }
+.colorable-1bkp8v.red-33-Lnk {
+  border-radius: 128px;
+}
 
 
 
@@ -157,6 +159,7 @@ $btn-hover-col: lighten($col-bg-accent, 10%);
 //*DM Search Bubble ------------------------------ //
 // Credit: PoorPockets McNewHold#1984 ------------ //
 // TODO: Clean this up for SCSS ------------------ //
+// TODO: Fix sizing and spacing of this button --- //
 #app-mount .privateChannels-1nO12o .searchBar-6Kv8R2 {
   position: absolute;
   bottom: 8px;
@@ -190,8 +193,8 @@ $btn-hover-col: lighten($col-bg-accent, 10%);
     position: absolute;
     height: 100%;
     width: 50px;
-    bottom: 0;
-    right: 0;
+    bottom: -1px;
+    right: -1px;
     background: url(https://discordapp.com/assets/4d254296157bb8927b7d53ed59beb0d8.svg) center/20px no-repeat;
     pointer-events: none;
   }

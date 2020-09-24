@@ -103,14 +103,6 @@ body {
 .input-cIJ7To.focused-1mmYsC,
 .input-cIJ7To:focus { border-color: $col-primary; }
 
-//*Settings Close Button ------------------------- //
-.theme-dark .closeButton-1tv5uR {
-  border: none;
-  border-radius: 0;
-  transition: $anim-speed $anim-ease;
-  &:hover { border-radius: 50%; }
-}
-
 //*Server Header---------------------------------- //
 .header-2o-2hj { background: $col-bg-secondary; }
 .clickable-2ap7je .header-2o-2hj:hover,

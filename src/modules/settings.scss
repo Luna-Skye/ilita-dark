@@ -2,6 +2,13 @@
 //*================== VARIABLES ==================*//
 @import '../_variables.scss';
 
+
+//*Settings Close Button ------------------------- //
+.theme-dark .closeButton-1tv5uR {
+  border: none;
+  transition: $anim-speed $anim-ease;
+}
+
 //*Question Mark Box ----------------------------- //
 .theme-dark .questionMark-CWEQZn {
   border-radius: 32px;

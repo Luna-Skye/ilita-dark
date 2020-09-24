@@ -137,7 +137,7 @@ $btn-hover-col: lighten($col-bg-accent, 10%);
   }
 }
 
-//*Scrollable Auto Chat -------------------------- //
+//*Scrollable AutoComplete ----------------------- //
 // Credit: Freeplay#5676 ------------------------- //
 .autocomplete-1vrmpx {
   max-height: calc(100vh - 120px);
@@ -159,7 +159,6 @@ $btn-hover-col: lighten($col-bg-accent, 10%);
 //*DM Search Bubble ------------------------------ //
 // Credit: PoorPockets McNewHold#1984 ------------ //
 // TODO: Clean this up for SCSS ------------------ //
-// TODO: Fix sizing and spacing of this button --- //
 #app-mount .privateChannels-1nO12o .searchBar-6Kv8R2 {
   position: absolute;
   bottom: 8px;

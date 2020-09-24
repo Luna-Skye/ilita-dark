@@ -288,7 +288,7 @@ $btn-hover-col: lighten($col-bg-accent, 10%);
       padding: 8px;
       border-radius: 32px;
       background: transparent;
-      width: 42px;
+      width: 40px;
       transition: $anim-speed $anim-ease;
 
       &:hover {
@@ -297,6 +297,7 @@ $btn-hover-col: lighten($col-bg-accent, 10%);
       
       .iconLayout-1WxHy4 .icon-3cZ1F_ {
         color: #B9BBBE;
+        cursor: pointer;
       }
 
       .DraftEditor-root .public-DraftEditorPlaceholder-root {
